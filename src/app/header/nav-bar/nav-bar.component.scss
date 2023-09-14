@@ -1,0 +1,63 @@
+@import '../../../scss/variable.scss';
+@import '../../../scss/mixins.scss';
+
+.block{
+    height: 71px;
+    width: 70px;
+    position: absolute;
+    background: $colorGold;
+    margin-left: 2px;
+}
+
+.header-bar{
+    @include flex(70px);
+
+    .catalog{
+        display: flex;
+        background: $colorGold;
+        justify-content: space-around;
+        padding: 26px 0 26px;
+
+        width: 130px;
+        .catalog-burger{
+            width: 22px;
+            height: 18px;
+        }
+
+        .burger-txt{
+            color: #FFF;
+            font-size: 16px;
+            font-weight: 600;
+            
+        }
+    }
+
+    .navigation{
+        display: flex;
+        justify-content: space-between;
+        gap: 65px;
+        color: $colorGray;
+        font-size: 16px;
+        font-weight: 500;
+        list-style: none;
+    }
+
+    .resurces{
+        display: flex;
+        justify-content: end;
+        gap:30px;
+
+        .img-block{
+            display: flex;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+
+            .resurces-img{
+                align-self: center;
+            }
+        }
+      
+    }
+
+}

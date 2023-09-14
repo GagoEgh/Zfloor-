@@ -1,0 +1,84 @@
+@import '../../../scss/variable.scss';
+@import '../../../scss/mixins.scss';
+
+.header{
+    @include flex(57px);
+
+    .logo{
+        width: 140px;
+        height: 45px;
+    }
+
+    .order{
+        display: flex;
+        gap:25px;
+
+        .phone{
+            display: flex;
+
+            .phone-call{
+                align-self: center;
+            }
+    
+            .phone-number{
+                @include location-font(16px,600);
+                align-self: center;
+            }
+        }
+
+        .order-call{
+            padding:  11px 17px 10px 16px;
+            border: 1px solid $colorGold;
+            color: $colorGold;
+            font-size: 16px;
+            font-weight: 500;
+            background-color: white;
+        }
+    }
+
+    .location{
+        display: flex;
+        gap:10px;
+
+        .location-img{
+            width: 19px;
+            height: 19px;
+            align-self: center;
+        }
+
+        .location-address{
+           
+            .address-home{
+                @include location-font(16px,400)
+            }
+
+            .address-homeOpen{
+                @include location-font(14px,400)
+            }
+        }
+    }
+    
+    .search{
+        display: flex;
+        position: relative;
+        .search-img{
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            left: 10px;
+            top: 10px;
+        }
+
+        .search-input{
+            width: 250px;
+            height: 40px;
+            border:1px solid #E4E4E4;
+            outline: transparent;
+            padding-left: 30px;
+            color: $colorGray;
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+}
+

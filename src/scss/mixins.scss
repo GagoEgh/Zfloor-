@@ -1,0 +1,15 @@
+@import '../scss/variable.scss';
+
+@mixin location-font($px,$weight){
+    color: $colorGray;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-size: $px;
+    font-weight: $weight;
+}
+
+@mixin flex($height){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: $height;
+}
