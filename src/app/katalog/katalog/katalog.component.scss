@@ -1,0 +1,46 @@
+@import "../../../scss/variable.scss";
+@import "../../../scss/mixins.scss";
+
+.katalog{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+
+    .section{
+        display: flex;
+        gap:15px;
+        color: #FFF;
+        font-size: 20px;
+        font-weight: 500;
+
+        .tiles{
+            @include imgStyle($imgWidth649,$imgHeight310,$rectangle)
+        }
+
+        .laminate{
+            @include imgStyle($imgWidth379,$imgHeight310,$laminate)
+        }
+
+        .linoleum{
+            @include imgStyle($imgWidth513,$imgHeight310,$linoleum)
+        }
+
+        .section-text{
+            align-self: flex-end;
+            padding: 0 0 25px 25px;
+        }
+
+        .carpet{
+            @include imgStyle($imgWidth513,$imgHeight310,$karpet)
+        }
+
+        .carpet-tiles{
+            @include imgStyle($imgWidth649,$imgHeight310,$tiles)
+        }
+
+        .products{
+            @include imgStyle($imgWidth379,$imgHeight310,$products)
+        }
+    }
+}
+

@@ -5,14 +5,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderModule } from './header/header.module';
 import { FloorCoveringsModule } from './floor_coverings/floor-coverings.module';
-import { KatalogModule } from './katalog/katalog/katalog.module';
+import { KatalogModule } from './katalog/katalog.module';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     HeaderModule,
     FloorCoveringsModule,

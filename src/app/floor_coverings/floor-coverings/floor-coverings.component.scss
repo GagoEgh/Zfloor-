@@ -44,22 +44,27 @@
             top: -40%;
             width: 272px;
             height: 54px;
-            gap:17px;
+            gap:40px;
+
+            ::before{
+                content: '';
+                display: block;
+                position: absolute;
+                left:81%;
+                top:4px;
+                width: 1px;
+                height: 45px;
+                background-color: #FFF; 
+            }
 
             .btn-block{
                 display: flex;
-                gap:$size20;
-
-                .hg{
-                    width: 1px;
-                    height: 45px;
-                    background-color: #FFF; 
-                }
-
+                
                 .btn-img{
                     width: 6px;
                     height: 12px;
                     align-self: center;
+                  
                 }
             }
            

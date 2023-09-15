@@ -13,3 +13,36 @@
     align-items: center;
     height: $height;
 }
+
+@mixin imgStyle($width,$height,$url){
+    width: $width;
+    height: $height;
+    display: flex;
+    background-image: url($url);
+    background-position: center;
+}
+
+@mixin flex-column($gap){
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+}
+
+@mixin flex-center($color,$bg){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:24px;
+    width: 204px;
+    height: 55px;
+    font-size: 20px;
+    font-weight: 500;
+    color:$color;
+    background:$bg;
+}
+
+@mixin fontStyle($color,$size,$weight){
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+}

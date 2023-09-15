@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./floor-coverings.component.scss']
 })
 export class FloorCoveringsComponent {
-  bigImg = "../../../assets/imgs/interior_1.png";
-  smalImg = "../../../assets/imgs/interior_2.png";
+  bigImg = "../../../assets/imgs/header/interior_1.png";
+  smalImg = "../../../assets/imgs/header/interior_2.png";
+  vector = "../../../assets/imgs/header/vector_right.png";
 }

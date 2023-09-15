@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./nav-bar.component.scss']
 })
 export class NavBarComponent {
-  burger = "../../../assets/imgs/burger.png";
-  login = "../../../assets/imgs/login.png";
-  star = "../../../assets/imgs/star.png";
-  shoping = "../../../assets/imgs/shopping.png";
+  burger = "../../../assets/imgs/header/burger.png";
+  login = "../../../assets/imgs/header/login.png";
+  star = "../../../assets/imgs/header/star.png";
+  shoping = "../../../assets/imgs/header/shopping.png";
 
 }

@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./header-contacts.component.scss']
 })
 export class HeaderContactsComponent {
-  logo = "../../../assets/imgs/logo.png";
-  call = "../../../assets/imgs/call.png";
-  location = "../../../assets/imgs/location.png";
-  search = "../../../assets/imgs/Vector.png";
+  logo = "../../../assets/imgs/header/logo.png";
+  call = "../../../assets/imgs/header/call.png";
+  location = "../../../assets/imgs/header/location.png";
+  search = "../../../assets/imgs/header/Vector.png";
 }
