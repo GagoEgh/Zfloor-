@@ -1,5 +1,5 @@
-@import "../../../scss/mixins.scss";
-@import "../../../scss/variable.scss";
+@import "../../../../scss/variable.scss";
+@import "../../../../scss/mixins.scss";
 
 
 
@@ -8,7 +8,8 @@
     justify-content: center;
     gap:196px;
     background: #F6F6F6;
-    margin-top: 90px;
+    margin: 90px 0;
+    padding-bottom: 90px;
 
     .flooring-sel{
         @include flex-column(80px);
@@ -79,42 +80,48 @@
             gap:110px;
 
             .block{
-                display: flex;
-                flex-direction: column;
-                gap: 14px;
+               @include flex-column(14px);
 
                 .img-block{
                     border: 1px solid $colorGold;
                     padding: 17px 14px;
                 }
 
-                .form-control{
-                    font-family: system-ui, sans-serif;
-                    font-weight: bold;
-                    line-height: 1.1;
-                    display:flex;
-                    align-items: center;
-                    gap: 5px;
-
-                    span{
-                        color: var(--heading-color, #202020);
-                        font-size: 12px;
-                        font-weight: 400;
-                    }
+                .kovr-img{
+                    width: 116px;
                 }
 
-                .form-control + .form-control {
-                    margin-top: 1em;
+                .laminat-img{
+                    width: 116px;
                 }
-
-           
             }
         }
 
         .botom-imgs{
             display: flex;
-            gap:110px;
+            gap:77px;
         }
+
+        .form-control{
+            font-family: system-ui, sans-serif;
+            font-weight: bold;
+            line-height: 1.1;
+            display:flex;
+            align-items: center;
+            gap: 5px;
+
+            span{
+                color: var(--heading-color, #202020);
+                font-size: 12px;
+                font-weight: 400;
+            }
+        }
+
+        .form-control + .form-control {
+            margin-top: 1em;
+        }
+
+      
     }
 }
 

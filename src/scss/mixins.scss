@@ -46,3 +46,22 @@
     font-size: $size;
     font-weight: $weight;
 }
+
+@mixin after($width){
+    content: '';
+    display: block;
+    position: relative;
+    width: $width;
+    height: 2px;
+    background: #C68F4E;
+    top: 15px;
+    left: -69px;
+    
+}
+
+@mixin titleStyle(){
+    color: var(--heading-color, #202020);
+    font-size: 50px;
+    font-weight: 700;
+    padding-bottom: 50px;
+}

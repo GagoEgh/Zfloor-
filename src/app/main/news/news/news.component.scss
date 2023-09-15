@@ -1,0 +1,58 @@
+@import "../../../../scss/mixins.scss";
+@import "../../../../scss/variable.scss";
+
+.news-title{
+    @include titleStyle()
+
+}
+
+.news-title::after{
+  @include after(274px);
+  
+}
+
+
+.news{
+
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 60px;
+    .section{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        .news-text{
+            display: flex;
+
+            .text-block{
+                h3{
+                    color: var(--heading-color, #202020);
+                    font-size: 25px;
+                    font-weight: 600;
+                }
+    
+                p{
+                    color: var(--text-color, #666);
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 150%;
+                }
+            }
+
+    
+            .btn{
+                @include flex-center($colorGold,#FFF);
+                border: 1px solid $colorGold;
+            }
+        }
+
+        .section-img{
+            width: 623px;
+            height: 271px;
+        }
+
+       
+    }
+}
