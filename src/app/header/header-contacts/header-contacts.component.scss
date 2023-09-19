@@ -1,12 +1,25 @@
 @import '../../../scss/variable.scss';
 @import '../../../scss/mixins.scss';
 
+.container{
+    @media (max-width: 1025px){
+        width: 100%;
+    }
+}
 .header{
     @include flex(57px);
+    @media (max-width:800px){
+        gap:10px
+    }
 
     .logo{
         width: 140px;
         height: 45px;
+
+        @media(max-width: 800px){
+            width: 80px;
+            height: 30px;
+        }
     }
 
     .order{
@@ -18,11 +31,28 @@
 
             .phone-call{
                 align-self: center;
+                @media(max-width: 800px){
+                    width: 22px;
+                }
             }
     
             .phone-number{
                 @include location-font(16px,600);
                 align-self: center;
+
+                @media (max-width: 1441px){
+                    @include location-font(14px,500);
+                    
+                }
+
+                @media (max-width: 1210px){
+                    @include location-font(10px,400);
+                    
+                }
+
+                @media(max-width: 800px){
+                    @include location-font(7px,400);
+                }
             }
         }
 
@@ -33,6 +63,40 @@
             font-size: 16px;
             font-weight: 500;
             background-color: white;
+            
+            @media (max-width: 1441px){
+                padding:  9px 15px 8px 14px;
+                font-size: 14px;
+                font-weight: 500;
+            }
+
+            @media (max-width: 1210px){
+                padding:  7px 13px 6px 12px;
+                font-size: 12px;
+                font-weight: 400;
+            }
+
+            @media (max-width: 1025px){
+                padding:  5px 10px 4px 9px;
+                font-size: 9px;
+                font-weight: 400;
+            }
+
+            @media (max-width: 865px){
+                padding:  5px;
+            }
+        }
+        
+        @media (max-width: 1441px){
+                gap:20px;
+        }
+
+        @media (max-width: 1210px){
+            gap:15px;
+        }
+
+        @media (max-width: 865px){
+            gap:10px;
         }
     }
 
@@ -40,20 +104,61 @@
         display: flex;
         gap:10px;
 
+        @media(max-width: 800px){
+            gap:0;
+        }
+
         .location-img{
             width: 19px;
             height: 19px;
             align-self: center;
+
+            @media(max-width: 800px){
+                width: 15px;
+                height: 15px;
+            }
         }
 
         .location-address{
            
             .address-home{
-                @include location-font(16px,400)
+                @include location-font(16px,400);
+
+                @media (max-width: 1441px){
+                    @include location-font(14px,400);
+                }
+
+                @media (max-width: 1210px){
+                    @include location-font(12px,400);
+                }
+
+                @media (max-width: 1025px){
+                    @include location-font(10px,400);
+                }
+
+                @media (max-width: 865px){
+                    @include location-font(8px,300);
+                }
             }
 
             .address-homeOpen{
-                @include location-font(14px,400)
+                @include location-font(14px,400);
+
+                @media (max-width: 1441px){
+                    @include location-font(14px,400);
+                }
+
+                @media (max-width: 1210px){
+                    @include location-font(12px,400);
+                }
+
+                @media (max-width: 1025px){
+                    @include location-font(10px,400);
+                }
+
+                @media (max-width: 865px){
+                    @include location-font(8px,300);
+                }
             }
         }
     }
@@ -67,6 +172,11 @@
             height: 18px;
             left: 10px;
             top: 10px;
+            @media (max-width: 1025px){
+                width: 12px;
+                height: 12px;
+    
+            }
         }
 
         .search-input{
@@ -78,7 +188,26 @@
             color: $colorGray;
             font-size: 14px;
             font-weight: 400;
+
+            @media (max-width: 1025px){
+                width: 200px;
+                height: 30px;
+                font-size: 12px;
+                font-weight: 400;
+            }
+
+            @media (max-width:865px){
+                width: 170px;
+                font-size: 11px;
+                font-weight: 300;
+            }
+
+            @media (max-width:800px){
+                width: 130px;
+            }
+            
         }
     }
+
 }
 

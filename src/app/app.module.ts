@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderModule } from './header/header.module';
 import { MainModule } from './main/main.module';
+import { FooterModule } from './footer/footer.module';
 
 @NgModule({
   declarations: [
@@ -16,9 +17,12 @@ import { MainModule } from './main/main.module';
     FormsModule,
     AppRoutingModule,
     HeaderModule,
-    MainModule
+    MainModule,
+    FooterModule
   ],
+
   providers: [],
+  
   bootstrap: [AppComponent]
 })
 export class AppModule { }

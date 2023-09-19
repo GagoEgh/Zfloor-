@@ -20,6 +20,9 @@
     display: flex;
     background-image: url($url);
     background-position: center;
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 @mixin flex-column($gap){
@@ -28,13 +31,13 @@
     gap: $gap;
 }
 
-@mixin flex-center($color,$bg){
+@mixin flex-center($color,$bg,$width,$hg){
     display: flex;
     align-items: center;
     justify-content: center;
     gap:24px;
-    width: 204px;
-    height: 55px;
+    width:$width;
+    height:$hg; 
     font-size: 20px;
     font-weight: 500;
     color:$color;

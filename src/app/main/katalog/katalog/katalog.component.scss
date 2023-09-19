@@ -2,6 +2,17 @@
 @import "../../../../scss/mixins.scss";
 @import "../../../../scss/variable.scss";
 
+.title{
+    color: var(--heading-color, #202020);
+    font-size: 40px;
+    font-weight: 700; 
+    padding-bottom: 50px;
+}
+
+.title::after{
+  @include after(215px)
+}
+
 .katalog{
     display: flex;
     flex-direction: column;
@@ -14,33 +25,43 @@
         font-size: 20px;
         font-weight: 500;
 
+        @media(max-width:1024px){
+            font-size: 14px;
+        }
+
+        @media(max-width:769px){
+            font-size: 10px;
+        }
         .tiles{
-            @include imgStyle($imgWidth649,$imgHeight310,$rectangle)
+            @include imgStyle(40%,$imgHeight310,$rectangle);
         }
 
         .laminate{
-            @include imgStyle($imgWidth379,$imgHeight310,$laminate)
+            @include imgStyle(25%,$imgHeight310,$laminate);
         }
 
         .linoleum{
-            @include imgStyle($imgWidth513,$imgHeight310,$linoleum)
+            @include imgStyle(35%,$imgHeight310,$linoleum);
         }
 
         .section-text{
             align-self: flex-end;
             padding: 0 0 25px 25px;
+            @media(max-width:769px){
+                padding: 0 0 5px 5px;
+            }
         }
 
         .carpet{
-            @include imgStyle($imgWidth513,$imgHeight310,$karpet)
+            @include imgStyle(35%,$imgHeight310,$karpet)
         }
 
         .carpet-tiles{
-            @include imgStyle($imgWidth649,$imgHeight310,$tiles)
+            @include imgStyle(40%,$imgHeight310,$tiles)
         }
 
         .products{
-            @include imgStyle($imgWidth379,$imgHeight310,$products)
+            @include imgStyle(25%,$imgHeight310,$products)
         }
     }
 }
