@@ -3,9 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderModule } from './header/header.module';
-import { MainModule } from './main/main.module';
-import { FooterModule } from './footer/footer.module';
+
+import { DashboardModule } from './dashboards/dashboard/dashboard.module';
+import { HeaderModule } from './core/header/header.module';
+import { FooterModule } from './core/footer/footer.module';
+
 
 @NgModule({
   declarations: [
@@ -17,7 +19,7 @@ import { FooterModule } from './footer/footer.module';
     FormsModule,
     AppRoutingModule,
     HeaderModule,
-    MainModule,
+    DashboardModule,
     FooterModule
   ],
 

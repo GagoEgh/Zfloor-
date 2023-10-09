@@ -1,0 +1,152 @@
+
+@import '../../../../scss/mixins.scss';
+@import '../../../../scss/variable.scss';
+
+.block{
+    height: 71px;
+    width: 70px;
+    position: absolute;
+    background: $colorGold;
+    margin-left: 2px;
+
+    @media (max-width: 1025px){
+        height: 50px;
+        width: 50px;
+    }
+}
+
+.header-bar{
+    @include flex(70px);
+
+    @media (max-width: 1025px){
+        @include flex(50px);
+    }
+
+    @media (max-width: 1025px){
+      gap:5px;
+    }
+
+    .catalog{
+        display: flex;
+        background: $colorGold;
+        justify-content: space-around;
+        padding: 26px 0 26px;
+        width: 130px;
+        @media (max-width: 1025px){
+            padding: 16px 0 15px;
+           
+        }
+
+        @media (max-width: 800px){
+            padding: 16px 0 21px;
+            width: 60px;
+        }
+
+        .catalog-burger{
+            width: 22px;
+            height: 18px;
+            @media (max-width:800px){
+                width: 15px;
+                height: 13px;
+                z-index: 99;
+            }
+        }
+
+        .burger-txt{
+            color: #FFF;
+            font-size: 16px;
+            font-weight: 600;
+            @media (max-width:800px){
+                font-size: 10px;
+                font-weight: 400;
+                z-index: 999;
+                padding: 0 4px 0 7px;
+            }
+        }
+    }
+
+    .navigation{
+        display: flex;
+        gap: 65px;
+        color: $colorGray;
+        font-size: 16px;
+        font-weight: 500;
+        list-style: none;
+
+        @media (max-width: 1441px){
+            gap: 40px;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        @media (max-width: 1025px){
+            gap: 35px;
+            font-size: 10px;
+            font-weight: 400;
+        }
+
+        @media (max-width:800px){
+            gap: 10px;
+            font-size: 10px;
+            font-weight: 300;
+        }
+
+        @media (max-width:540px){
+            gap: 10px;
+            font-size: 7px;
+            font-weight: 300;
+        }
+    }
+
+    .resurces{
+        display: flex;
+        justify-content: end;
+        gap:30px;
+
+        @media (max-width: 1441px){
+            gap:15px;
+        }
+
+        @media (max-width: 1025px){
+            gap:10px;
+        }
+
+        .img-block{
+            display: flex;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+
+            @media (max-width: 1025px){
+                width: fit-content;
+                height: fit-content;
+            }
+
+            .resurces-img{
+                align-self: center;
+                @media (max-width: 1025px){
+                    width: 15px;
+                    height: 15px;
+                    margin-top: 3px;
+                }
+
+                @media (max-width:800px){
+                    width: 12px;
+                    height: 12px;
+                }
+            }
+        }
+        .resurces-img-star{
+            @media (max-width: 1025px){
+                width: 22px;
+                height: 22px
+            }
+
+            @media (max-width: 800px){
+                width: 18px;
+                height: 18px
+            }
+        }
+    }
+
+}
