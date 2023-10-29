@@ -1,25 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { KatalogComponent } from './katalog/katalog.component';
-import { FlooringSelComponent } from './flooring-sel/flooring-sel.component';
-import { FormsModule } from '@angular/forms';
+import { KatalogRoutingModule } from './katalog-routing';
 
 
 
 @NgModule({
   declarations: [
-    KatalogComponent,
-    FlooringSelComponent
+    KatalogComponent
   ],
-  
   imports: [
     CommonModule,
-    FormsModule,
-  ],
-
-  exports:[
-    KatalogComponent,
-    FlooringSelComponent
+    KatalogRoutingModule
   ]
 })
 export class KatalogModule { }

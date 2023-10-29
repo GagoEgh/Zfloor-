@@ -7,13 +7,9 @@
     </div>
     
     <ul class="navigation">
-        <li>О компании</li>
-        <li>Сервисы</li>
-        <li>Проекты</li>
-        <li>Акции</li>
-        <li>Новости</li>
-        <li>Контакты</li>
-        <li>Отзывы</li>
+        <li *ngFor="let root of bar">
+            <a [routerLink]="root.href">{{root.title}}</a>
+        </li> 
     </ul>
     
     <div class="resurces">

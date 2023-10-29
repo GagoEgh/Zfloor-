@@ -10,9 +10,8 @@
             <img src='{{mobImg}}' class="mobile-img">
         </div>
         <div class="btn">
-            <p>
-                Перейти в каталог 
-            </p>
+
+            <a routerLink='katalog'>Перейти в каталог</a>
             <div class="btn-block">
                 <img src = {{vector}} class="btn-img">
             </div>
@@ -20,3 +19,4 @@
     </div>
     <img src='{{bigImg}}' class="bigImg">
 </section>
+<router-outlet></router-outlet>

@@ -11,4 +11,33 @@ export class NavBarComponent {
   star = "/assets/imgs/header/star.png";
   shoping = "/assets/imgs/header/shopping.png";
 
+  bar = [
+    {
+      href: 'company',
+      title: 'О компании'
+    },
+    {
+      href: 'services',
+      title: 'Сервисы'
+    },
+    {
+      href: 'projects',
+      title: 'Проекты'
+    }, 
+    {
+      href: 'promotions',
+      title: 'Акции'
+    },
+    {
+      href: 'news',
+      title: 'Новости'
+    },
+    {
+      href: 'contacts',
+      title: 'Контакты'
+    }, 
+    {
+      href: 'reviews',
+      title: 'Отзывы'
+    },]
 }
