@@ -4,10 +4,10 @@ import { FloorCoveringsComponent } from './floor-coverings/floor-coverings.compo
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  {
-    path: 'katalog',
-    loadChildren: () => import('../../katalog/katalog.module').then(m => m.KatalogModule)
-  },
+  // {
+  //   path: 'katalog',
+  //   loadChildren: () => import('../../katalog/katalog.module').then(m => m.KatalogModule)
+  // },
 
 ];
 
@@ -17,11 +17,13 @@ const routes: Routes = [
   ],
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)
+    RouterModule
+
   ],
   exports: [
     FloorCoveringsComponent,
-    RouterModule]
+  ]
+
 
 })
 export class FloorCoveringsModule { }

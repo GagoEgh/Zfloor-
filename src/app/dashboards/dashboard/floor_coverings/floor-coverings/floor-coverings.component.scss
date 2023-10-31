@@ -137,7 +137,11 @@
             width: 272px;
             height: 54px;
             gap:40px;
-
+            a{
+                text-decoration: none;
+                color: #FFF;
+            }
+            
             @media (max-width:1240px){
                 top: -25%;
                 width: 200px;

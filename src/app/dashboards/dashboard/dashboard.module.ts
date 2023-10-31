@@ -10,7 +10,7 @@ import { KatalogRewModule } from './katalog-rewind/katalog-rew.module';
 
 @NgModule({
   declarations: [
-    MainComponent,
+     MainComponent,
   ],
 
   imports: [
@@ -24,7 +24,7 @@ import { KatalogRewModule } from './katalog-rewind/katalog-rew.module';
   ],
 
   exports:[
-    MainComponent,
+     MainComponent,
   ]
 })
 export class DashboardModule { }

@@ -4,18 +4,10 @@ import { MainComponent } from './main/main.component';
 
 const routes: Routes = [
   {
-    path:'',
-    component:MainComponent,
-    // children:[
-    //   {
-    //     path: 'katalog',
-    //     loadChildren: () => import('../katalog/katalog.module').then(m => m.KatalogModule)
-    //   },
-    // ]
+    path: '',
+    component: MainComponent,
+  
   },
-
-
-
 ];
 
 @NgModule({
