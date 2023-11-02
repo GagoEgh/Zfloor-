@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 
 import { HeaderModule } from './core/header/header.module';
 import { FooterModule } from './core/footer/footer.module';
+import { StoreModule } from '@ngrx/store';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+
   ],
 
   imports: [
@@ -18,7 +20,8 @@ import { FooterModule } from './core/footer/footer.module';
     FormsModule,
     AppRoutingModule,
     HeaderModule,
-    FooterModule
+    FooterModule,
+    StoreModule.forRoot(),
   ],
 
   providers: [],
